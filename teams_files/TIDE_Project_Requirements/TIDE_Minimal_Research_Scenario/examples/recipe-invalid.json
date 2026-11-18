@@ -1,0 +1,18 @@
+{
+  "recipe_id": "fixture-recipe-not-run",
+  "project_id": "tide-demo-project",
+  "p1_version": "1.0.0",
+  "p2_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "feature_fields": [
+    "control_input",
+    "flow_rate",
+    "temperature"
+  ],
+  "target_field": "target_temp",
+  "missing_strategy": "forward_fill",
+  "smoothing_window": 99,
+  "lag": 1,
+  "train_fraction": 0.7,
+  "script": "print(123)"
+}

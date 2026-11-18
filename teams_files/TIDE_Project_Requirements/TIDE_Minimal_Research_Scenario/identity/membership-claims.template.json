@@ -1,0 +1,12 @@
+{
+  "template": true,
+  "not_a_signed_vc": true,
+  "claim_type": "TideProjectMembershipClaims",
+  "issuer": "did:web:issuer.example.invalid",
+  "subject_participant": "did:web:research.example.invalid",
+  "project_id": "tide-demo-project",
+  "role": "RESEARCH_MEMBER",
+  "valid_from": "2026-11-01T00:00:00Z",
+  "valid_until": "2027-11-01T00:00:00Z",
+  "proof": null
+}
