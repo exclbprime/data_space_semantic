@@ -1,6 +1,6 @@
 # TIDE P1–P4 定义、功能与验收
 
-本文件说明 TIDE 统一研究场景中各对象的范围、输入输出和验收结果。对象定义沿用[项目任务书](TIDE_Research_Task_Plan.md)和[最小研究场景](TIDE_Minimal_Research_Scenario/)。组员分工见 [C 组任务清单](TIDE_C_Group_Implementation_and_Acceptance.md)。
+本文件说明 TIDE 统一研究场景中各对象的范围、输入输出和验收结果。对象定义沿用[项目任务书](TIDE_Research_Task_Plan.md)和[最小研究场景](TIDE_Minimal_Research_Scenario/)。任务和进度见[C 组语义互操作任务清单](TIDE_C_Group_Semantic_Task_List.md)，复跑步骤见[实施与验收说明](TIDE_C_Group_Implementation_and_Acceptance.md)。
 
 ## 一次研究协作如何使用 P1–P4
 
