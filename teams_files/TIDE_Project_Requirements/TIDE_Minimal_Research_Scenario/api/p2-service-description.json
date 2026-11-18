@@ -1,0 +1,9 @@
+{
+  "resource_id": "tide-p2-benchmark-v1",
+  "service_version": "1.0.0",
+  "input_schema": "recipe.schema.json",
+  "output_schema": "result.schema.json",
+  "fixed_algorithm": "ARX baseline, implement per contract",
+  "raw_data_export": false,
+  "implementation_status": "NOT_IMPLEMENTED"
+}

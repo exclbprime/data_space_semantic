@@ -1,0 +1,6 @@
+﻿field,type,unit,nullable,role,description
+timestamp,ISO8601 UTC,minute,false,index,严格递增的采样时间
+control_input,float,ratio,false,input,0到1控制输入
+flow_rate,float,L/min,true,input,固定位置含缺失
+temperature,float,degC,false,input_state,当前温度状态，非未来标签
+target_temp,float,degC,false,target_only,下一时刻温度，禁止进入特征

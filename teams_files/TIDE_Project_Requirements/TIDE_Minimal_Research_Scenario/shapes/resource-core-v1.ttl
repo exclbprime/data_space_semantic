@@ -1,0 +1,22 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tide: <https://example.invalid/tide/vocab#> .
+
+tide:ResearchResourceShape a sh:NodeShape ;
+  sh:targetClass tide:ResearchResource ;
+  sh:property [ sh:path tide:resource_id ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "resource_id: required or invalid value" ] ;
+  sh:property [ sh:path tide:participant_id ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "participant_id: required or invalid value" ] ;
+  sh:property [ sh:path tide:project_id ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "project_id: required or invalid value" ] ;
+  sh:property [ sh:path tide:title ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "title: required or invalid value" ] ;
+  sh:property [ sh:path tide:description ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "description: required or invalid value" ] ;
+  sh:property [ sh:path tide:domain ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "domain: required or invalid value" ] ;
+  sh:property [ sh:path tide:owner ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "owner: required or invalid value" ] ;
+  sh:property [ sh:path tide:rights_holder ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "rights_holder: required or invalid value" ] ;
+  sh:property [ sh:path tide:source ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "source: required or invalid value" ] ;
+  sh:property [ sh:path tide:license_or_terms ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "license_or_terms: required or invalid value" ] ;
+  sh:property [ sh:path tide:access_level ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:in ( "PUBLIC" "PROJECT" "RESTRICTED" ) ; sh:message "access_level: required or invalid value" ] ;
+  sh:property [ sh:path tide:schema_version ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:hasValue "1.0.0" ; sh:message "schema_version: required or invalid value" ] ;
+  sh:property [ sh:path tide:product_version ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:message "product_version: required or invalid value" ] ;
+  sh:property [ sh:path tide:endpoint_ref ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:message "endpoint_ref: required or invalid value" ] ;
+  sh:property [ sh:path tide:checksum ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:pattern "^[a-f0-9]{64}$" ; sh:message "checksum: required or invalid value" ] ;
+  sh:property [ sh:path tide:maintenance_status ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ; sh:in ( "ACTIVE" "RETIRED" ) ; sh:message "maintenance_status: required or invalid value" ] .

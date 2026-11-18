@@ -1,0 +1,20 @@
+{
+  "generator_version": "1.0.0",
+  "record_count_each": 2400,
+  "artifacts": [
+    {
+      "path": "data/p1-process.csv",
+      "rows": 2400,
+      "seed": 1101,
+      "sha256": "0a679d7ef194caddbc72a44a279b62bd5481d7061450a9ae889fe197dace9b36",
+      "synthetic": true
+    },
+    {
+      "path": "data/restricted/p2-process.csv",
+      "rows": 2400,
+      "seed": 2202,
+      "sha256": "c8d822a67d69be08723f1534383c936be0abb314ff774e6b2f5e8fd07ed0167c",
+      "synthetic": true
+    }
+  ]
+}

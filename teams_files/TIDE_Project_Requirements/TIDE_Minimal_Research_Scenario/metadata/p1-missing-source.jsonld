@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "tide": "https://example.invalid/tide/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "resource_id": "tide:resource_id",
+    "participant_id": "tide:participant_id",
+    "project_id": "tide:project_id",
+    "title": "tide:title",
+    "description": "tide:description",
+    "domain": "tide:domain",
+    "owner": "tide:owner",
+    "rights_holder": "tide:rights_holder",
+    "source": "tide:source",
+    "license_or_terms": "tide:license_or_terms",
+    "access_level": "tide:access_level",
+    "schema_version": "tide:schema_version",
+    "product_version": "tide:product_version",
+    "endpoint_ref": {
+      "@id": "tide:endpoint_ref",
+      "@type": "@id"
+    },
+    "checksum": "tide:checksum",
+    "provenance": {
+      "@id": "tide:provenance",
+      "@type": "@json"
+    },
+    "maintenance_status": "tide:maintenance_status",
+    "extension": {
+      "@id": "tide:extension",
+      "@type": "@json"
+    }
+  },
+  "@id": "urn:tide:resource:p1:v1",
+  "@type": "tide:ResearchResource",
+  "resource_id": "tide-p1-process-v1",
+  "participant_id": "source-team",
+  "project_id": "tide-demo-project",
+  "title": "合成过程数据研究资源包",
+  "description": "本届生成的教学输入；不是企业生产数据",
+  "domain": "industrial-process",
+  "owner": "source-team",
+  "rights_holder": "synthetic-fixture-author",
+  "license_or_terms": "TIDE-SYNTHETIC-DEMO-v1",
+  "access_level": "PROJECT",
+  "schema_version": "1.0.0",
+  "product_version": "1.0.0",
+  "endpoint_ref": "urn:tide:endpoint:p1",
+  "checksum": "0a679d7ef194caddbc72a44a279b62bd5481d7061450a9ae889fe197dace9b36",
+  "provenance": {
+    "generator_version": "1.0.0",
+    "seed": 1101
+  },
+  "extension": {
+    "unit_temperature": "degC",
+    "unit_flow": "L/min",
+    "format": "text/csv"
+  },
+  "maintenance_status": "ACTIVE"
+}
