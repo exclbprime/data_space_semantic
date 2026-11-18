@@ -1,0 +1,19 @@
+{
+  "job_id": "fixture-job-not-executed",
+  "project_id": "tide-demo-project",
+  "resource_id": "tide-p4-results-v1",
+  "schema_version": "1.0.0",
+  "p1_version": "1.0.0",
+  "p2_version": "1.0.0",
+  "p1_sha256": "0a679d7ef194caddbc72a44a279b62bd5481d7061450a9ae889fe197dace9b36",
+  "p2_sha256": "c8d822a67d69be08723f1534383c936be0abb314ff774e6b2f5e8fd07ed0167c",
+  "recipe_id": "fixture-recipe-not-run",
+  "recipe_sha256": "52bc14f0520714bbf30957eec70ad3024dd6670c191fc07ffb664324f6cf17b6",
+  "benchmark_version": "fixture-only-1.0.0",
+  "agreement_id": "fixture-agreement-not-negotiated",
+  "n_train": 1680,
+  "n_test": 720,
+  "mae": 0.4,
+  "valid_ratio": 1.0,
+  "created_at": "2026-11-01T00:00:00Z"
+}

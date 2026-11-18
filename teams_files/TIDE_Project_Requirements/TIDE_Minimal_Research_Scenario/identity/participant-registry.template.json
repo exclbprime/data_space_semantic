@@ -1,0 +1,33 @@
+{
+  "template": true,
+  "participants": [
+    {
+      "participant_id": "source-team",
+      "did": "did:web:source-team.example.invalid",
+      "connector_url": "https://source-team.example.invalid",
+      "identityhub_url": "https://identity-source-team.example.invalid",
+      "status": "NOT_DEPLOYED"
+    },
+    {
+      "participant_id": "research-team",
+      "did": "did:web:research-team.example.invalid",
+      "connector_url": "https://research-team.example.invalid",
+      "identityhub_url": "https://identity-research-team.example.invalid",
+      "status": "NOT_DEPLOYED"
+    },
+    {
+      "participant_id": "restricted-lab",
+      "did": "did:web:restricted-lab.example.invalid",
+      "connector_url": "https://restricted-lab.example.invalid",
+      "identityhub_url": "https://identity-restricted-lab.example.invalid",
+      "status": "NOT_DEPLOYED"
+    },
+    {
+      "participant_id": "review-team",
+      "did": "did:web:review-team.example.invalid",
+      "connector_url": "https://review-team.example.invalid",
+      "identityhub_url": "https://identity-review-team.example.invalid",
+      "status": "NOT_DEPLOYED"
+    }
+  ]
+}

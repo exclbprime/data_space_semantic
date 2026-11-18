@@ -1,0 +1,20 @@
+{
+  "grant_id": "fixture-grant-not-issued",
+  "request_id": "fixture-request-not-run",
+  "subject_user_id": "student-01",
+  "subject_team_id": "research-team",
+  "participant_id": "research-team",
+  "project_id": "tide-demo-project",
+  "resource_ids": [
+    "tide-p1-process-v1"
+  ],
+  "actions": [
+    "READ_DATA"
+  ],
+  "purpose": "research-demo",
+  "authorizer_user_id": "owner-p1",
+  "valid_from": "2026-11-01T00:00:00Z",
+  "valid_until": "2027-11-01T00:00:00Z",
+  "status": "REVOKED",
+  "version": 2
+}

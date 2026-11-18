@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/tide/schemas/result.schema.json",
+  "title": "result.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "job_id",
+    "project_id",
+    "resource_id",
+    "schema_version",
+    "p1_version",
+    "p2_version",
+    "p1_sha256",
+    "p2_sha256",
+    "recipe_id",
+    "recipe_sha256",
+    "benchmark_version",
+    "agreement_id",
+    "n_train",
+    "n_test",
+    "mae",
+    "valid_ratio",
+    "created_at"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_id": {
+      "type": "string",
+      "const": "tide-p4-results-v1"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "p1_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "p2_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "p1_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "p2_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "recipe_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recipe_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "benchmark_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agreement_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "n_train": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "n_test": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "mae": {
+      "type": "number",
+      "minimum": 0
+    },
+    "valid_ratio": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

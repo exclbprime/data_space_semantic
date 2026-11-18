@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "tide": "https://example.invalid/tide/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "resource_id": "tide:resource_id",
+    "participant_id": "tide:participant_id",
+    "project_id": "tide:project_id",
+    "title": "tide:title",
+    "description": "tide:description",
+    "domain": "tide:domain",
+    "owner": "tide:owner",
+    "rights_holder": "tide:rights_holder",
+    "source": "tide:source",
+    "license_or_terms": "tide:license_or_terms",
+    "access_level": "tide:access_level",
+    "schema_version": "tide:schema_version",
+    "product_version": "tide:product_version",
+    "endpoint_ref": {
+      "@id": "tide:endpoint_ref",
+      "@type": "@id"
+    },
+    "checksum": "tide:checksum",
+    "provenance": {
+      "@id": "tide:provenance",
+      "@type": "@json"
+    },
+    "maintenance_status": "tide:maintenance_status",
+    "extension": {
+      "@id": "tide:extension",
+      "@type": "@json"
+    }
+  },
+  "@id": "urn:tide:resource:p2:v1",
+  "@type": "tide:ResearchResource",
+  "resource_id": "tide-p2-benchmark-v1",
+  "participant_id": "restricted-lab",
+  "project_id": "tide-demo-project",
+  "title": "tide-p2-benchmark-v1",
+  "description": "本届生成的教学输入；不是企业生产数据",
+  "domain": "industrial-process",
+  "owner": "restricted-lab",
+  "rights_holder": "synthetic-fixture-author",
+  "source": "tide-new-synthetic-fixture",
+  "license_or_terms": "TIDE-SYNTHETIC-DEMO-v1",
+  "access_level": "RESTRICTED",
+  "schema_version": "1.0.0",
+  "product_version": "1.0.0",
+  "endpoint_ref": "urn:tide:endpoint:p2",
+  "checksum": "bd351891ee64549ff930d5b1f9b66a8eb8fde36515fa7bd61ca4df6e61baa083",
+  "provenance": {
+    "fixture_path": "api/p2-service-description.json"
+  },
+  "extension": {
+    "kind": "p2"
+  },
+  "maintenance_status": "ACTIVE"
+}
