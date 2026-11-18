@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/tide/schemas/metadata.schema.json",
+  "title": "metadata.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "resource_id",
+    "participant_id",
+    "project_id",
+    "title",
+    "description",
+    "domain",
+    "owner",
+    "rights_holder",
+    "source",
+    "license_or_terms",
+    "access_level",
+    "schema_version",
+    "product_version",
+    "endpoint_ref",
+    "checksum",
+    "provenance",
+    "maintenance_status",
+    "@context",
+    "@id",
+    "@type",
+    "extension"
+  ],
+  "properties": {
+    "resource_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "participant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rights_holder": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "license_or_terms": {
+      "type": "string",
+      "minLength": 1
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "PUBLIC",
+        "PROJECT",
+        "RESTRICTED"
+      ]
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "product_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "endpoint_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checksum": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "provenance": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "maintenance_status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "RETIRED"
+      ]
+    },
+    "@context": {
+      "type": "object"
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "string",
+      "const": "tide:ResearchResource"
+    },
+    "extension": {
+      "type": "object"
+    }
+  }
+}

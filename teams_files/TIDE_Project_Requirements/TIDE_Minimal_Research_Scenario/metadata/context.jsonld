@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "tide": "https://example.invalid/tide/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "resource_id": "tide:resource_id",
+    "participant_id": "tide:participant_id",
+    "project_id": "tide:project_id",
+    "title": "tide:title",
+    "description": "tide:description",
+    "domain": "tide:domain",
+    "owner": "tide:owner",
+    "rights_holder": "tide:rights_holder",
+    "source": "tide:source",
+    "license_or_terms": "tide:license_or_terms",
+    "access_level": "tide:access_level",
+    "schema_version": "tide:schema_version",
+    "product_version": "tide:product_version",
+    "endpoint_ref": {
+      "@id": "tide:endpoint_ref",
+      "@type": "@id"
+    },
+    "checksum": "tide:checksum",
+    "provenance": {
+      "@id": "tide:provenance",
+      "@type": "@json"
+    },
+    "maintenance_status": "tide:maintenance_status",
+    "extension": {
+      "@id": "tide:extension",
+      "@type": "@json"
+    }
+  }
+}
